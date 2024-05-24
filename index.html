@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система моніторингу роботи команди</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Система моніторингу роботи команди</h1>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Назва завдання" required>
+            <input type="text" id="teamMember" placeholder="Член команди" required>
+            <input type="number" id="hoursSpent" placeholder="Витрачені години" required>
+            <button type="submit">Додати завдання</button>
+        </form>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Назва завдання</th>
+                    <th>Член команди</th>
+                    <th>Витрачені години</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Динамічно додані рядки -->
+            </tbody>
+        </table>
+        <div id="analysis">
+            <h2>Аналіз продуктивності</h2>
+            <p id="totalHours">Загальна кількість витрачених годин: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
